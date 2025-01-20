@@ -1,0 +1,55 @@
+package race_car;
+
+//import java.util.ArrayList;
+//import java.util.List;
+
+public class Car {
+    private Engine engine;
+    private List<Tire> tires;
+
+    public Car() {
+        engine = new Engine();
+        tires = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            tires.add(new Tire(32)); // Initialize tires with 32 psi
+        }
+    }
+
+    public boolean start() {
+        if (allTiresHaveRequiredPressure()) {
+            engine.start();
+            System.out.println("Car has started.");
+            return true;
+        } else {
+            System.out.println("Cannot start the car. Check tire pressures.");
+            return false;
+        }
+    }
+
+    public void run(int speed) {
+        if (engine.isRunning()) {
+            System.out.println("Car is running at " + speed + " mph.");
+        } else {
+            System.out.println("Start the car before running.");
+        }
+    }
+
+    public void stop() {
+        engine.stop();
+        System.out.println("Car has stopped.");
+    }
+
+    public void restart() {
+        stop();
+        start();
+    }
+
+    private boolean allTiresHaveRequiredPressure() {
+        for (Tire tire : tires) {
+            if (!tire.checkPressure()) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

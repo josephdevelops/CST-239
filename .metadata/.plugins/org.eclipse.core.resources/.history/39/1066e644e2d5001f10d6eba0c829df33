@@ -1,0 +1,24 @@
+
+package race_car;
+
+import race_car.Car;
+
+public class Driver {
+    public static void main(String[] args) {
+        Car raceCar = new Car();
+
+        System.out.println("Attempting to start the car...");
+        if (raceCar.start()) {
+            raceCar.run(45); // Running at 45 mph
+        }
+
+        System.out.println("Stopping the car...");
+        raceCar.stop();
+
+        System.out.println("Restarting the car...");
+        raceCar.restart();
+
+        System.out.println("Driving again...");
+        raceCar.run(60); // Running at 60 mph
+    }
+}
