@@ -4,10 +4,12 @@
 	<section name="java.lang.Class">
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="view"/>
+			<item value="view cart"/>
+			<item value="name"/>
 			<item value="viewInventory"/>
 			<item value="displayMenu"/>
 			<item value="enter you"/>
-			<item value=""/>
 		</list>
 	</section>
 </section>
