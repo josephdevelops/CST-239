@@ -2,14 +2,37 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
-		<item key="selection" value=""/>
+		<item key="selection" value="        &#x09;"/>
+		<item key="replaceBarOpen" value="false"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="view"/>
-			<item value="view cart"/>
-			<item value="name"/>
-			<item value="viewInventory"/>
-			<item value="displayMenu"/>
-			<item value="enter you"/>
+			<item value="checking out"/>
+			<item value="Product not available or out of stock.&#x0A;"/>
+			<item value="productName"/>
+			<item value="storefront"/>
+			<item value="cheking out"/>
+			<item value="invalid choice"/>
+			<item value="StoreFront"/>
+			<item value="out of stock"/>
+			<item value="invalid"/>
+			<item value="shoppingCart"/>
+			<item value="        &#x09;"/>
+			<item value="//    private void removeFromCart() {"/>
+			<item value="productNa"/>
+			<item value="super"/>
 		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="588"/>
+		<item key="DIALOG_Y_ORIGIN" value="206"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

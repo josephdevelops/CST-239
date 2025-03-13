@@ -1,6 +1,0 @@
-/**
- * hello person
- */
-module person {
-
-}

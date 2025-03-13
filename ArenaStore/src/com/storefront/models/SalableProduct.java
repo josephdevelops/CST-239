@@ -7,12 +7,14 @@ public abstract class SalableProduct {
 	private String description;
 	private double price;
 	private int quantity;
+	private int cartQuantity;
 	
-	public SalableProduct(String name, String description, double price, int quantity) {
+	public SalableProduct(String name, String description, double price, int quantity, int cartQuantity) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.quantity = quantity;
+		this.cartQuantity = cartQuantity;
 	}
 	
 	public String getName() {
@@ -47,11 +49,19 @@ public abstract class SalableProduct {
 		this.quantity = quantity;
 	}
 	
+	public int getCartQuantity() {
+		return cartQuantity;
+	}
+	
+	public void setCartQuantity(int cartQuantity) {
+		this.cartQuantity = cartQuantity;
+	}
+	
 	public abstract void use();
 	
 	@Override
 	public String toString() {
-		return name + " - " + description + ", Price: $" + price + ", Quantity:" + quantity;
+		return name + " - " + description + ", Price: $" + price + ", Stock:" + quantity + ", Cart:" + cartQuantity;
 	}
 }
 

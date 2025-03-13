@@ -4,8 +4,8 @@ package com.storefront.models;
 public class Health extends SalableProduct {
     private int healthRestored;
 
-    public Health(String name, String description, double price, int quantity, int healthRestored) {
-        super(name, description, price, quantity);
+    public Health(String name, String description, double price, int quantity, int healthRestored, int cartQuantity) {
+        super(name, description, price, quantity, cartQuantity);
         this.healthRestored = healthRestored;
     }
 

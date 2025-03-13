@@ -6,6 +6,14 @@
 	<item key="TypeHierarchyViewPart.orientation" value="3"/>
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-11"/>
+	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
+	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
+	<item key="SearchScopeActionGroup.search_scope_type" value="1"/>
+	<item key="CallHierarchyViewPart.call_mode" value="0"/>
+	<item key="CallHierarchyViewPart.field_mode" value="2"/>
+	<item key="CallHierarchyViewPart.ratio3" value="500"/>
+	<item key="CallHierarchyViewPart.orientation" value="3"/>
+	<item key="CallHierarchyViewPart.ratio1" value="500"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -15,7 +23,7 @@
 	</section>
 	<section name="JavaProjectWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="117"/>
-		<item key="DIALOG_Y_ORIGIN" value="-38"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="790"/>
 		<item key="DIALOG_HEIGHT" value="807"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -31,7 +39,7 @@
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="219"/>
-		<item key="DIALOG_Y_ORIGIN" value="-24"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="630"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -84,15 +92,30 @@
 		<item key="antpath" value="/Users/Abraham/CST-239/ArenaStore/javadoc.xml"/>
 		<item key="destdir" value="/Users/Abraham/CST-239/ArenaStore/doc"/>
 		<section name="projects">
-			<section name="person">
-				<item key="href" value=""/>
-				<item key="destdir" value="/Users/Abraham/Documents/GradSchool/workspaceCST-239/person/doc"/>
-				<item key="antpath" value="/Users/Abraham/Documents/GradSchool/workspaceCST-239/person/javadoc.xml"/>
-			</section>
 			<section name="topic1_1">
 				<item key="href" value=""/>
 				<item key="destdir" value="/Users/Abraham/CST-239/topic1_1/doc"/>
 				<item key="antpath" value="/Users/Abraham/CST-239/topic1_1/javadoc.xml"/>
+			</section>
+			<section name="topic1_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/Documents/GradSchool/workspaceCST-239/person/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic1_2/javadoc.xml"/>
+			</section>
+			<section name="topic2_1">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic2_1/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic2_1/javadoc.xml"/>
+			</section>
+			<section name="topic2_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic2_2/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic2_2/javadoc.xml"/>
+			</section>
+			<section name="topic2_3">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic2_3/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic2_3/javadoc.xml"/>
 			</section>
 			<section name="ArenaStore">
 				<item key="href" value=""/>
@@ -127,5 +150,13 @@
 		<item key="expanded6" value="false"/>
 		<item key="expanded7" value="false"/>
 		<item key="expanded8" value="false"/>
+	</section>
+	<section name="SearchInDialog">
+		<item key="SearchInSources" value="true"/>
+		<item key="SearchInProjects" value="true"/>
+		<item key="SearchInJRE" value="true"/>
+		<item key="SearchInAppLibs" value="true"/>
+	</section>
+	<section name="CallHierarchySearchScope">
 	</section>
 </section>
