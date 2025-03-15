@@ -28,6 +28,10 @@ public class StoreFront {
         scanner = new Scanner(System.in);
         initializeStore();
     }
+    
+    public void setShoppingCart(ShoppingCart shoppingCart) {
+        this.shoppingCart = shoppingCart;
+    }
 
     /**
      * Initializes the store with predefined products (weapons, armor, health items).
