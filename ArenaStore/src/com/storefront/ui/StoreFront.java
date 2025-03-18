@@ -10,7 +10,7 @@ import com.storefront.models.SalableProduct;
 import java.util.Scanner;
 
 /**
- * The StoreFront class represents the user interface for a storefront application.
+ * The {@code StoreFront} class represents the user interface for the storefront application.
  * It allows users to view inventory, add/remove products from the shopping cart,
  * checkout, and view past orders.
  */
@@ -20,7 +20,8 @@ public class StoreFront {
     private Scanner scanner;
 
     /**
-     * Constructs a StoreFront instance, initializes the inventory, and sets up the shopping cart.
+     * Constructs a {@code StoreFront} instance, initializes the inventory, 
+     * and sets up the shopping cart.
      */
     public StoreFront() {
         inventoryManager = new InventoryManager();
@@ -28,13 +29,18 @@ public class StoreFront {
         scanner = new Scanner(System.in);
         initializeStore();
     }
-    
+
+    /**
+     * Sets the shopping cart instance.
+     *
+     * @param shoppingCart The ShoppingCart instance to be assigned.
+     */
     public void setShoppingCart(ShoppingCart shoppingCart) {
         this.shoppingCart = shoppingCart;
     }
 
     /**
-     * Initializes the store with predefined products (weapons, armor, health items).
+     * Initializes the store with predefined products such as weapons, armor, and health items.
      */
     private void initializeStore() {
         inventoryManager.addProduct(new Weapon("Sword", "A sharp steel sword", 99.99, 10, 50, 0));
@@ -66,7 +72,7 @@ public class StoreFront {
 
     /**
      * The main entry point of the application.
-     * 
+     *
      * @param args Command-line arguments (not used).
      */
     public static void main(String[] args) {
@@ -90,21 +96,17 @@ public class StoreFront {
             scanner.nextLine(); // Consume leftover newline character
 
             switch (choice) {                
-            	case 0:
-                sortInventory();
-                System.out.println("\n --- \n");
-                break;
+                case 0:
+                    sortInventory();
+                    break;
                 case 1:
                     viewInventory();
-                    System.out.println("\n --- \n");
                     break;
                 case 2:
                     addToCart();
-                    System.out.println("\n --- \n");
                     break;
                 case 3:
                     removeFromCart();
-                    System.out.println("\n --- \n");
                     break;
                 case 4:
                     shoppingCart.viewCart();
@@ -122,13 +124,14 @@ public class StoreFront {
                     break;
                 default:
                     System.out.println("\n --- \n\nInvalid choice. Try again.");
-                    
             }
             displayMenu();
-            
         } while (choice != 7);
     }
-    
+
+    /**
+     * Provides sorting options for inventory based on Name, Price, or Quantity.
+     */
     private void sortInventory() {
         System.out.println("\nSort Inventory By:");
         System.out.println("1. Name");
@@ -159,7 +162,6 @@ public class StoreFront {
                 break;
             default:
                 System.out.println("Invalid option. Returning to main menu.");
-
         }
     }
 
@@ -215,17 +217,10 @@ public class StoreFront {
 
     /**
      * Gets the shopping cart instance.
-     * 
-     * @return The ShoppingCart instance.
+     *
+     * @return The {@code ShoppingCart} instance.
      */
     public ShoppingCart getShoppingCart() {
         return shoppingCart;
     }
-
-    /**
-     * Sets the shopping cart instance.
-     * 
-     * @param shoppingCart The ShoppingCart instance to be assigned.
-     */
-  
 }
