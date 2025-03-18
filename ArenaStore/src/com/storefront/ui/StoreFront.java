@@ -52,6 +52,7 @@ public class StoreFront {
      */
     public void displayMenu() {
         System.out.println("\n --- \n");
+        System.out.println("0. Preferences");
         System.out.println("1. View Inventory");
         System.out.println("2. Add Product to Cart");
         System.out.println("3. Remove Product from Cart");
@@ -88,7 +89,11 @@ public class StoreFront {
             choice = scanner.nextInt();
             scanner.nextLine(); // Consume leftover newline character
 
-            switch (choice) {
+            switch (choice) {                
+            	case 0:
+                sortInventory();
+                System.out.println("\n --- \n");
+                break;
                 case 1:
                     viewInventory();
                     System.out.println("\n --- \n");
@@ -109,18 +114,53 @@ public class StoreFront {
                     break;
                 case 6:
                     shoppingCart.pastOrders();
-                    displayMenu();
                     break;
                 case 7:
                     System.out.println("Exiting the store. Goodbye!");
+                    scanner.close();
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("\n --- \n\nInvalid choice. Try again.");
-                    displayMenu();
+                    
             }
+            displayMenu();
+            
         } while (choice != 7);
-        scanner.close();
-        System.exit(0);
+    }
+    
+    private void sortInventory() {
+        System.out.println("\nSort Inventory By:");
+        System.out.println("1. Name");
+        System.out.println("2. Price");
+        System.out.println("3. Quantity");
+        System.out.print("Enter sorting option: ");
+
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid input. Enter a number (1-3): ");
+            scanner.next();
+        }
+
+        int sortChoice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (sortChoice) {
+            case 1:
+                inventoryManager.sortByName();
+                System.out.println("Inventory sorted by Name.");
+                break;
+            case 2:
+                inventoryManager.sortByPrice();
+                System.out.println("Inventory sorted by Price.");
+                break;
+            case 3:
+                inventoryManager.sortByQuantity();
+                System.out.println("Inventory sorted by Quantity.");
+                break;
+            default:
+                System.out.println("Invalid option. Returning to main menu.");
+
+        }
     }
 
     /**

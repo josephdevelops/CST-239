@@ -57,7 +57,6 @@ public abstract class SalableProduct {
 		this.cartQuantity = cartQuantity;
 	}
 	
-	public abstract void use();
 	
 	@Override
 	public String toString() {
