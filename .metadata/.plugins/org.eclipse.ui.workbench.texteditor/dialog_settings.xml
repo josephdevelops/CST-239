@@ -10,21 +10,21 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="sho"/>
-			<item value="setShoppingCart"/>
-			<item value="shopping"/>
+			<item value="car"/>
+			<item value="type"/>
 			<item value="main"/>
-			<item value="checking out"/>
-			<item value="Product not available or out of stock.&#x0A;"/>
-			<item value="productName"/>
-			<item value="storefront"/>
-			<item value="cheking out"/>
-			<item value="invalid choice"/>
-			<item value="StoreFront"/>
-			<item value="out of stock"/>
-			<item value="invalid"/>
-			<item value="shoppingCart"/>
-			<item value="        &#x09;"/>
+			<item value="printwriter"/>
+			<item value="scanner"/>
+			<item value="print"/>
+			<item value="object"/>
+			<item value="readFrom"/>
+			<item value="Object"/>
+			<item value="Array List"/>
+			<item value="jason"/>
+			<item value="protect"/>
+			<item value="outfile"/>
+			<item value="compare"/>
+			<item value="sort"/>
 		</list>
 		<list key="replacehistory">
 		</list>
