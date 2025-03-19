@@ -90,9 +90,29 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="11"/>
-		<item key="antpath" value="/Users/Abraham/CST-239/ArenaStore/javadoc.xml"/>
-		<item key="destdir" value="/Users/Abraham/CST-239/ArenaStore/doc"/>
+		<item key="antpath" value="/Users/Abraham/CST-239/topic4_2/javadoc.xml"/>
+		<item key="destdir" value="/Users/Abraham/CST-239/topic4_2/doc"/>
 		<section name="projects">
+			<section name="topic4_1a">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic4_1a/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic4_1a/javadoc.xml"/>
+			</section>
+			<section name="topic4_1d">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic4_1d/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic4_1d/javadoc.xml"/>
+			</section>
+			<section name="topic4_1c">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic4_1c/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic4_1c/javadoc.xml"/>
+			</section>
+			<section name="topic4_1b">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic4_1b/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic4_1b/javadoc.xml"/>
+			</section>
 			<section name="topic1_1">
 				<item key="href" value=""/>
 				<item key="destdir" value="/Users/Abraham/CST-239/topic1_1/doc"/>
@@ -132,6 +152,11 @@
 				<item key="href" value=""/>
 				<item key="destdir" value="/Users/Abraham/CST-239/topic3_3/doc"/>
 				<item key="antpath" value="/Users/Abraham/CST-239/topic3_3/javadoc.xml"/>
+			</section>
+			<section name="topic4_2">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/Abraham/CST-239/topic4_2/doc"/>
+				<item key="antpath" value="/Users/Abraham/CST-239/topic4_2/javadoc.xml"/>
 			</section>
 			<section name="ArenaStore">
 				<item key="href" value=""/>

@@ -1,13 +1,15 @@
 package com.storefront.ui;
 
+import java.util.Scanner;
+
 import com.storefront.cart.ShoppingCart;
 import com.storefront.managers.InventoryManager;
 import com.storefront.models.Armor;
 import com.storefront.models.Health;
-import com.storefront.models.Weapon;
 import com.storefront.models.SalableProduct;
-
-import java.util.Scanner;
+import com.storefront.models.Weapon;
+import json.CreateJson;
+import json.LoadJson;
 
 /**
  * The {@code StoreFront} class represents the user interface for the storefront application.
@@ -43,14 +45,19 @@ public class StoreFront {
      * Initializes the store with predefined products such as weapons, armor, and health items.
      */
     private void initializeStore() {
-        inventoryManager.addProduct(new Weapon("Sword", "A sharp steel sword", 99.99, 10, 50, 0));
-        inventoryManager.addProduct(new Weapon("Axe", "A well-crafted axe", 89.99, 10, 50, 0));
-        inventoryManager.addProduct(new Armor("Shield", "A sturdy wooden shield", 79.99, 5, 30, 0));
-        inventoryManager.addProduct(new Armor("Helmet", "An iron helmet", 69.99, 5, 30, 0));
-        inventoryManager.addProduct(new Health("Minor Potion", "Restores 10 HP", 9.99, 10, 50, 0));
-        inventoryManager.addProduct(new Health("Potion", "Restores 50 HP", 19.99, 20, 50, 0));
 
-        System.out.println("Welcome to the Store Front!");
+
+    	CreateJson.createJsonFile();
+    	LoadJson.loadInventory(inventoryManager);
+
+//        inventoryManager.addProduct(new Weapon("Sword", "A sharp steel sword", 99.99, 10, 50, 0));
+//        inventoryManager.addProduct(new Weapon("Axe", "A well-crafted axe", 89.99, 10, 50, 0));
+//        inventoryManager.addProduct(new Armor("Shield", "A sturdy wooden shield", 79.99, 5, 30, 0));
+//        inventoryManager.addProduct(new Armor("Helmet", "An iron helmet", 69.99, 5, 30, 0));
+//        inventoryManager.addProduct(new Health("Minor Potion", "Restores 10 HP", 9.99, 10, 50, 0));
+//        inventoryManager.addProduct(new Health("Potion", "Restores 50 HP", 19.99, 20, 50, 0));
+//
+//        System.out.println("Welcome to the Store Front!");
     }
 
     /**
@@ -76,6 +83,7 @@ public class StoreFront {
      * @param args Command-line arguments (not used).
      */
     public static void main(String[] args) {
+    	
         StoreFront storeFront = new StoreFront();
         storeFront.displayMenu();
         storeFront.handleUserInput();  // Keeps the program running.

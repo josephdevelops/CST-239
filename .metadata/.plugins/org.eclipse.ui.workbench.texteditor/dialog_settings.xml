@@ -10,9 +10,13 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="prints"/>
+			<item value="main"/>
+			<item value="new weapon"/>
+			<item value="name"/>
+			<item value="super"/>
 			<item value="car"/>
 			<item value="type"/>
-			<item value="main"/>
 			<item value="printwriter"/>
 			<item value="scanner"/>
 			<item value="print"/>
@@ -21,10 +25,6 @@
 			<item value="Object"/>
 			<item value="Array List"/>
 			<item value="jason"/>
-			<item value="protect"/>
-			<item value="outfile"/>
-			<item value="compare"/>
-			<item value="sort"/>
 		</list>
 		<list key="replacehistory">
 		</list>

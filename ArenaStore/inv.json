@@ -1,0 +1,55 @@
+[
+  {
+    "type": "Weapon",
+    "name": "Sword",
+    "description": "A sharp steel sword",
+    "price": 99.99,
+    "quantity": 10,
+    "cartQuantity": 0
+  },
+  {
+    "type": "Weapon",
+    "name": "Axe",
+    "description": "A heavy battle axe",
+    "price": 89.99,
+    "quantity": 8,
+    "damage": 7,
+    "cartQuantity": 0
+  },
+  {
+    "type": "Armor",
+    "name": "Shield",
+    "description": "A sturdy wooden shield",
+    "price": 79.99,
+    "quantity": 5,
+    "defense": 10,
+    "cartQuantity": 0
+  },
+  {
+    "type": "Armor",
+    "name": "Helmet",
+    "description": "A reinforced steel helmet",
+    "price": 69.99,
+    "quantity": 7,
+    "defense": 5,
+    "cartQuantity": 0
+  },
+  {
+    "type": "Health",
+    "name": "Minor Potion",
+    "description": "Restores 10 HP",
+    "price": 9.99,
+    "quantity": 15,
+    "healthRestored": 5,
+    "cartQuantity": 0
+  },
+  {
+    "type": "Health",
+    "name": "Potion",
+    "description": "Restores 50 HP",
+    "price": 19.99,
+    "quantity": 20,
+    "healthRestored": 50,
+    "cartQuantity": 0
+  }
+]
