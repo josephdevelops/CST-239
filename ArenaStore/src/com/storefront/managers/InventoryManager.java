@@ -2,7 +2,6 @@ package com.storefront.managers;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import java.util.Comparator;
 
 import com.storefront.models.SalableProduct;
@@ -31,18 +30,30 @@ public class InventoryManager {
         return new ArrayList<>(products);
     }
     
-    /** Sort inventory by product name */
-    public void sortByName() {
-        products.sort(Comparator.comparing(SalableProduct::getName));
+    /** Sort inventory by product name with order option */
+    public void sortByName(boolean ascending) { // Modified: added boolean parameter
+        if (ascending) {
+            products.sort(Comparator.comparing(SalableProduct::getName));
+        } else {
+            products.sort(Comparator.comparing(SalableProduct::getName).reversed());
+        }
     }
 
-    /** Sort inventory by product price */
-    public void sortByPrice() {
-        products.sort(Comparator.comparingDouble(SalableProduct::getPrice));
+    /** Sort inventory by product price with order option */
+    public void sortByPrice(boolean ascending) { // Modified: added boolean parameter
+        if (ascending) {
+            products.sort(Comparator.comparingDouble(SalableProduct::getPrice));
+        } else {
+            products.sort(Comparator.comparingDouble(SalableProduct::getPrice).reversed());
+        }
     }
 
-    /** Sort inventory by product quantity */
-    public void sortByQuantity() {
-        products.sort(Comparator.comparingInt(SalableProduct::getQuantity));
+    /** Sort inventory by product quantity with order option */
+    public void sortByQuantity(boolean ascending) { // Modified: added boolean parameter
+        if (ascending) {
+            products.sort(Comparator.comparingInt(SalableProduct::getQuantity));
+        } else {
+            products.sort(Comparator.comparingInt(SalableProduct::getQuantity).reversed());
+        }
     }
 }

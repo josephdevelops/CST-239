@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 import com.storefront.cart.ShoppingCart;
 import com.storefront.managers.InventoryManager;
-import com.storefront.models.Armor;
-import com.storefront.models.Health;
 import com.storefront.models.SalableProduct;
-import com.storefront.models.Weapon;
 import json.CreateJson;
 import json.LoadJson;
 
@@ -45,19 +42,8 @@ public class StoreFront {
      * Initializes the store with predefined products such as weapons, armor, and health items.
      */
     private void initializeStore() {
-
-
-    	CreateJson.createJsonFile();
-    	LoadJson.loadInventory(inventoryManager);
-
-//        inventoryManager.addProduct(new Weapon("Sword", "A sharp steel sword", 99.99, 10, 50, 0));
-//        inventoryManager.addProduct(new Weapon("Axe", "A well-crafted axe", 89.99, 10, 50, 0));
-//        inventoryManager.addProduct(new Armor("Shield", "A sturdy wooden shield", 79.99, 5, 30, 0));
-//        inventoryManager.addProduct(new Armor("Helmet", "An iron helmet", 69.99, 5, 30, 0));
-//        inventoryManager.addProduct(new Health("Minor Potion", "Restores 10 HP", 9.99, 10, 50, 0));
-//        inventoryManager.addProduct(new Health("Potion", "Restores 50 HP", 19.99, 20, 50, 0));
-//
-//        System.out.println("Welcome to the Store Front!");
+        CreateJson.createJsonFile();
+        LoadJson.loadInventory(inventoryManager);
     }
 
     /**
@@ -83,7 +69,6 @@ public class StoreFront {
      * @param args Command-line arguments (not used).
      */
     public static void main(String[] args) {
-    	
         StoreFront storeFront = new StoreFront();
         storeFront.displayMenu();
         storeFront.handleUserInput();  // Keeps the program running.
@@ -138,7 +123,8 @@ public class StoreFront {
     }
 
     /**
-     * Provides sorting options for inventory based on Name, Price, or Quantity.
+     * Provides sorting options for inventory based on Name, Price, or Quantity,
+     * and lets the user choose ascending or descending order.
      */
     private void sortInventory() {
         System.out.println("\nSort Inventory By:");
@@ -151,22 +137,31 @@ public class StoreFront {
             System.out.println("Invalid input. Enter a number (1-3): ");
             scanner.next();
         }
-
         int sortChoice = scanner.nextInt();
         scanner.nextLine();
 
+        // New prompt for sort order
+        System.out.println("Choose order: 1 for Ascending, 2 for Descending");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid input. Enter a number (1-2): ");
+            scanner.next();
+        }
+        int orderChoice = scanner.nextInt();
+        scanner.nextLine();
+        boolean ascending = (orderChoice == 1); // true for ascending, false for descending
+        
         switch (sortChoice) {
             case 1:
-                inventoryManager.sortByName();
-                System.out.println("Inventory sorted by Name.");
+                inventoryManager.sortByName(ascending);
+                System.out.println("Inventory sorted by Name in " + (ascending ? "Ascending" : "Descending") + " order.");
                 break;
             case 2:
-                inventoryManager.sortByPrice();
-                System.out.println("Inventory sorted by Price.");
+                inventoryManager.sortByPrice(ascending);
+                System.out.println("Inventory sorted by Price in " + (ascending ? "Ascending" : "Descending") + " order.");
                 break;
             case 3:
-                inventoryManager.sortByQuantity();
-                System.out.println("Inventory sorted by Quantity.");
+                inventoryManager.sortByQuantity(ascending);
+                System.out.println("Inventory sorted by Quantity in " + (ascending ? "Ascending" : "Descending") + " order.");
                 break;
             default:
                 System.out.println("Invalid option. Returning to main menu.");

@@ -20,12 +20,6 @@ public class LoadJson {
     public static void loadInventory(InventoryManager inventoryManager) {
         String filePath = "inv.json";
 
-        // Check if inv.json exists
-        if (!Files.exists(Paths.get(filePath))) {
-            System.out.println("inv.json not found! Please create the file.");
-            return;
-        }
-
         try {
             // Read JSON file as a string
             String jsonContent = Files.readString(Paths.get(filePath)).trim();
