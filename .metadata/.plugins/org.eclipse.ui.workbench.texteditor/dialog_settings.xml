@@ -10,6 +10,10 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="ArrayList"/>
+			<item value="sortInvent"/>
+			<item value="inventory.json"/>
+			<item value="inv"/>
 			<item value="prints"/>
 			<item value="main"/>
 			<item value="new weapon"/>
@@ -21,10 +25,6 @@
 			<item value="scanner"/>
 			<item value="print"/>
 			<item value="object"/>
-			<item value="readFrom"/>
-			<item value="Object"/>
-			<item value="Array List"/>
-			<item value="jason"/>
 		</list>
 		<list key="replacehistory">
 		</list>
